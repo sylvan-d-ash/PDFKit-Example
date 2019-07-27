@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PDFPreviewViewController.swift
 //  PDFPlayground
 //
 //  Created by Sylvan Ash on 23/11/2018.
@@ -11,7 +11,7 @@ import QuickLook
 import UIKit
 
 
-class ViewController: UIViewController {
+class PDFPreviewViewController: UIViewController {
 
 
     // MARK: - IBOutlets
