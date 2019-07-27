@@ -14,6 +14,7 @@
 		5E870C5621A81F6F008D99C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E870C5421A81F6F008D99C7 /* LaunchScreen.storyboard */; };
 		5E870C6121A81F6F008D99C7 /* PDFPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E870C6021A81F6F008D99C7 /* PDFPlaygroundTests.swift */; };
 		5E870C6C21A81F6F008D99C7 /* PDFPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E870C6B21A81F6F008D99C7 /* PDFPlaygroundUITests.swift */; };
+		5E870C7B21A8309D008D99C7 /* sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5E870C7A21A8309D008D99C7 /* sample.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5E870C6721A81F6F008D99C7 /* PDFPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E870C6B21A81F6F008D99C7 /* PDFPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPlaygroundUITests.swift; sourceTree = "<group>"; };
 		5E870C6D21A81F6F008D99C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E870C7A21A8309D008D99C7 /* sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sample.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,11 @@
 		5E870C4A21A81F6C008D99C7 /* PDFPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				5E870C7921A83078008D99C7 /* Resources */,
+				5E870C7D21A83588008D99C7 /* Support Files */,
 				5E870C4B21A81F6C008D99C7 /* AppDelegate.swift */,
 				5E870C4D21A81F6C008D99C7 /* ViewController.swift */,
 				5E870C4F21A81F6C008D99C7 /* Main.storyboard */,
-				5E870C5221A81F6F008D99C7 /* Assets.xcassets */,
-				5E870C5421A81F6F008D99C7 /* LaunchScreen.storyboard */,
-				5E870C5721A81F6F008D99C7 /* Info.plist */,
 			);
 			path = PDFPlayground;
 			sourceTree = "<group>";
@@ -123,6 +124,24 @@
 				5E870C6D21A81F6F008D99C7 /* Info.plist */,
 			);
 			path = PDFPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		5E870C7921A83078008D99C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E870C5221A81F6F008D99C7 /* Assets.xcassets */,
+				5E870C7A21A8309D008D99C7 /* sample.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E870C7D21A83588008D99C7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E870C5421A81F6F008D99C7 /* LaunchScreen.storyboard */,
+				5E870C5721A81F6F008D99C7 /* Info.plist */,
+			);
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E870C7B21A8309D008D99C7 /* sample.pdf in Resources */,
 				5E870C5621A81F6F008D99C7 /* LaunchScreen.storyboard in Resources */,
 				5E870C5321A81F6F008D99C7 /* Assets.xcassets in Resources */,
 				5E870C5121A81F6C008D99C7 /* Main.storyboard in Resources */,
