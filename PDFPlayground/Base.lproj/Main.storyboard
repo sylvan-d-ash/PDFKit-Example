@@ -31,7 +31,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="A4Z-Tt-3sg"/>
+                    <navigationItem key="navigationItem" id="A4Z-Tt-3sg">
+                        <barButtonItem key="rightBarButtonItem" image="outline" id="9hu-xA-axJ">
+                            <connections>
+                                <action selector="didTapOutlineButton:" destination="BYZ-38-t0r" id="BBg-IZ-zju"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="pdfContainerView" destination="1aA-CQ-xgh" id="gyL-OT-I6k"/>
                     </connections>
@@ -80,7 +86,7 @@
         <!--Navigation Controller-->
         <scene sceneID="8UD-Vq-Eeh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qri-np-PQd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="OutlineNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Qri-np-PQd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kwT-mS-QMs">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -96,4 +102,7 @@
             <point key="canvasLocation" x="113" y="72"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="outline" width="24" height="24"/>
+    </resources>
 </document>

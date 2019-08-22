@@ -25,7 +25,7 @@ class PDFPreviewViewController: UIViewController {
 
     private var pdfView: PDFView!
     private var pdfDocument: PDFDocument!
-    private let documentName: String = "sample.pdf"
+    private var toolBarActionController: PDFToolBarActionControllerProtocol!
 
 
     // MARK: - View LifeCycle
@@ -34,6 +34,7 @@ class PDFPreviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
+        self.setupToolbar()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -42,14 +43,21 @@ class PDFPreviewViewController: UIViewController {
     }
 
 
+    // MARK: - IBActions
+
+
+    @IBAction private func didTapOutlineButton(_ sender: Any) {
+        self.toolBarActionController.showOutlineTable(for: self.pdfDocument, from: sender)
+    }
+
+
     // MARK: - Setup
 
     private func setupUI() {
         // set title
-        self.title = self.documentName
+        self.title = "Sample.pdf"
     }
 
-    private var url: URL!
     private func preparePDFView(withPageMode displayMode: PDFDisplayMode) {
 
         // set frame
@@ -77,5 +85,21 @@ class PDFPreviewViewController: UIViewController {
         self.pdfDocument = PDFDocument(url: url)
         self.pdfView.document = self.pdfDocument
         self.pdfView.usePageViewController(true, withViewOptions: nil)
+    }
+
+    private func setupToolbar() {
+        self.toolBarActionController = PDFToolBarActionController(pdfPreviewViewController: self)
+    }
+}
+
+
+// MARK:- Selection functions
+
+
+extension PDFPreviewViewController {
+    /// Jump to selected table of contents index
+    func didSelect(pdfOutline: PDFOutline) {
+        guard let destination = pdfOutline.destination, let page = destination.page else { return }
+        self.pdfView.go(to: page)
     }
 }

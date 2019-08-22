@@ -27,7 +27,7 @@ class PDFOutlineTableViewController: UITableViewController {
 
 
     static func initFromStoryboard() -> PDFOutlineTableViewController {
-        let storyboard = UIStoryboard(name: "main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "\(PDFOutlineTableViewController.self)") as! PDFOutlineTableViewController
 
         return viewController
