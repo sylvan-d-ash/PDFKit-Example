@@ -15,6 +15,9 @@
 		5E870C6121A81F6F008D99C7 /* PDFPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E870C6021A81F6F008D99C7 /* PDFPlaygroundTests.swift */; };
 		5E870C6C21A81F6F008D99C7 /* PDFPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E870C6B21A81F6F008D99C7 /* PDFPlaygroundUITests.swift */; };
 		5E870C7B21A8309D008D99C7 /* sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5E870C7A21A8309D008D99C7 /* sample.pdf */; };
+		5EE3C062230E73A40066F594 /* PDFOutlineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3C061230E73A40066F594 /* PDFOutlineCell.swift */; };
+		5EE3C064230E73EE0066F594 /* PDFOutlineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3C063230E73EE0066F594 /* PDFOutlineCell.xib */; };
+		5EE3C066230E76070066F594 /* PDFOutlineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3C065230E76070066F594 /* PDFOutlineTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		5E870C6B21A81F6F008D99C7 /* PDFPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPlaygroundUITests.swift; sourceTree = "<group>"; };
 		5E870C6D21A81F6F008D99C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E870C7A21A8309D008D99C7 /* sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sample.pdf; sourceTree = "<group>"; };
+		5EE3C061230E73A40066F594 /* PDFOutlineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFOutlineCell.swift; sourceTree = "<group>"; };
+		5EE3C063230E73EE0066F594 /* PDFOutlineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFOutlineCell.xib; sourceTree = "<group>"; };
+		5EE3C065230E76070066F594 /* PDFOutlineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFOutlineTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +105,12 @@
 		5E870C4A21A81F6C008D99C7 /* PDFPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				5E870C7921A83078008D99C7 /* Resources */,
-				5E870C7D21A83588008D99C7 /* Support Files */,
 				5E870C4B21A81F6C008D99C7 /* AppDelegate.swift */,
 				5E870C4F21A81F6C008D99C7 /* Main.storyboard */,
 				5E2EC51422EC879F00F21F4B /* PDFPreviewViewController.swift */,
+				5EE3C060230E73550066F594 /* PDF Outline */,
+				5E870C7921A83078008D99C7 /* Resources */,
+				5E870C7D21A83588008D99C7 /* Support Files */,
 			);
 			path = PDFPlayground;
 			sourceTree = "<group>";
@@ -142,6 +149,16 @@
 				5E870C5721A81F6F008D99C7 /* Info.plist */,
 			);
 			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		5EE3C060230E73550066F594 /* PDF Outline */ = {
+			isa = PBXGroup;
+			children = (
+				5EE3C065230E76070066F594 /* PDFOutlineTableViewController.swift */,
+				5EE3C061230E73A40066F594 /* PDFOutlineCell.swift */,
+				5EE3C063230E73EE0066F594 /* PDFOutlineCell.xib */,
+			);
+			path = "PDF Outline";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +267,7 @@
 			files = (
 				5E870C7B21A8309D008D99C7 /* sample.pdf in Resources */,
 				5E870C5621A81F6F008D99C7 /* LaunchScreen.storyboard in Resources */,
+				5EE3C064230E73EE0066F594 /* PDFOutlineCell.xib in Resources */,
 				5E870C5321A81F6F008D99C7 /* Assets.xcassets in Resources */,
 				5E870C5121A81F6C008D99C7 /* Main.storyboard in Resources */,
 			);
@@ -278,6 +296,8 @@
 			files = (
 				5E2EC51522EC879F00F21F4B /* PDFPreviewViewController.swift in Sources */,
 				5E870C4C21A81F6C008D99C7 /* AppDelegate.swift in Sources */,
+				5EE3C062230E73A40066F594 /* PDFOutlineCell.swift in Sources */,
+				5EE3C066230E76070066F594 /* PDFOutlineTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

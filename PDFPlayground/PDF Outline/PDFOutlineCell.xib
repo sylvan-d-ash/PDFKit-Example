@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PDFOutlineCell" rowHeight="46" id="uBn-aJ-TIA" customClass="PDFOutlineCell" customModule="PDFPlayground" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="46"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uBn-aJ-TIA" id="3lh-jN-maQ">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="45.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diy-g9-gVp">
+                        <rect key="frame" x="0.0" y="0.0" width="44" height="45.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="KLm-Tw-cWx"/>
+                        </constraints>
+                        <state key="normal" image="arrow_right"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7v-HH-san">
+                        <rect key="frame" x="44" y="0.0" width="292" height="45.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzu-Ho-5Mt">
+                        <rect key="frame" x="344" y="0.0" width="32" height="45.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="OQ1-pQ-J90"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fzu-Ho-5Mt" firstAttribute="leading" secondItem="y7v-HH-san" secondAttribute="trailing" constant="8" id="Men-1h-BZw"/>
+                    <constraint firstAttribute="bottom" secondItem="Fzu-Ho-5Mt" secondAttribute="bottom" id="Qw5-6H-dcr"/>
+                    <constraint firstAttribute="bottom" secondItem="diy-g9-gVp" secondAttribute="bottom" id="SU7-Kw-fIk"/>
+                    <constraint firstItem="y7v-HH-san" firstAttribute="leading" secondItem="diy-g9-gVp" secondAttribute="trailing" id="VJG-iZ-AYx"/>
+                    <constraint firstItem="Fzu-Ho-5Mt" firstAttribute="top" secondItem="3lh-jN-maQ" secondAttribute="top" id="XbF-3G-bZI"/>
+                    <constraint firstItem="diy-g9-gVp" firstAttribute="top" secondItem="3lh-jN-maQ" secondAttribute="top" id="YbU-yM-qeS"/>
+                    <constraint firstAttribute="trailing" secondItem="Fzu-Ho-5Mt" secondAttribute="trailing" constant="8" id="mYb-QO-YnA"/>
+                    <constraint firstAttribute="bottom" secondItem="y7v-HH-san" secondAttribute="bottom" id="r50-Rh-I0s"/>
+                    <constraint firstItem="diy-g9-gVp" firstAttribute="leading" secondItem="3lh-jN-maQ" secondAttribute="leading" id="tDK-8f-Szs"/>
+                    <constraint firstItem="y7v-HH-san" firstAttribute="top" secondItem="3lh-jN-maQ" secondAttribute="top" id="zKG-V1-IvO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="openButton" destination="diy-g9-gVp" id="7vt-Ku-HJf"/>
+                <outlet property="openButtonLeadingConstraint" destination="tDK-8f-Szs" id="4ui-5k-KlR"/>
+                <outlet property="outlineLabel" destination="y7v-HH-san" id="x0L-Cj-dM1"/>
+                <outlet property="pageNumberLabel" destination="Fzu-Ho-5Mt" id="YDe-79-elT"/>
+            </connections>
+            <point key="canvasLocation" x="115.94202898550725" y="147.32142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="24" height="24"/>
+    </resources>
+</document>
