@@ -19,6 +19,9 @@
 		5EE3C064230E73EE0066F594 /* PDFOutlineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3C063230E73EE0066F594 /* PDFOutlineCell.xib */; };
 		5EE3C066230E76070066F594 /* PDFOutlineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3C065230E76070066F594 /* PDFOutlineTableViewController.swift */; };
 		5EE3C068230E7B7F0066F594 /* PDFToolbarActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3C067230E7B7F0066F594 /* PDFToolbarActionController.swift */; };
+		5EE3C06B230FDD570066F594 /* PDFSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3C06A230FDD570066F594 /* PDFSearchCell.xib */; };
+		5EE3C06D230FDE090066F594 /* PDFSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3C06C230FDE090066F594 /* PDFSearchCell.swift */; };
+		5EE3C06F230FDE690066F594 /* PDFSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3C06E230FDE690066F594 /* PDFSearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		5EE3C063230E73EE0066F594 /* PDFOutlineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFOutlineCell.xib; sourceTree = "<group>"; };
 		5EE3C065230E76070066F594 /* PDFOutlineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFOutlineTableViewController.swift; sourceTree = "<group>"; };
 		5EE3C067230E7B7F0066F594 /* PDFToolbarActionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFToolbarActionController.swift; sourceTree = "<group>"; };
+		5EE3C06A230FDD570066F594 /* PDFSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFSearchCell.xib; sourceTree = "<group>"; };
+		5EE3C06C230FDE090066F594 /* PDFSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFSearchCell.swift; sourceTree = "<group>"; };
+		5EE3C06E230FDE690066F594 /* PDFSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFSearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 				5E2EC51422EC879F00F21F4B /* PDFPreviewViewController.swift */,
 				5EE3C067230E7B7F0066F594 /* PDFToolbarActionController.swift */,
 				5EE3C060230E73550066F594 /* PDF Outline */,
+				5EE3C069230FDD290066F594 /* PDF Search */,
 				5E870C7921A83078008D99C7 /* Resources */,
 				5E870C7D21A83588008D99C7 /* Support Files */,
 			);
@@ -162,6 +169,16 @@
 				5EE3C063230E73EE0066F594 /* PDFOutlineCell.xib */,
 			);
 			path = "PDF Outline";
+			sourceTree = "<group>";
+		};
+		5EE3C069230FDD290066F594 /* PDF Search */ = {
+			isa = PBXGroup;
+			children = (
+				5EE3C06E230FDE690066F594 /* PDFSearchTableViewController.swift */,
+				5EE3C06C230FDE090066F594 /* PDFSearchCell.swift */,
+				5EE3C06A230FDD570066F594 /* PDFSearchCell.xib */,
+			);
+			path = "PDF Search";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +289,7 @@
 				5E870C5621A81F6F008D99C7 /* LaunchScreen.storyboard in Resources */,
 				5EE3C064230E73EE0066F594 /* PDFOutlineCell.xib in Resources */,
 				5E870C5321A81F6F008D99C7 /* Assets.xcassets in Resources */,
+				5EE3C06B230FDD570066F594 /* PDFSearchCell.xib in Resources */,
 				5E870C5121A81F6C008D99C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +319,8 @@
 				5E870C4C21A81F6C008D99C7 /* AppDelegate.swift in Sources */,
 				5EE3C068230E7B7F0066F594 /* PDFToolbarActionController.swift in Sources */,
 				5EE3C062230E73A40066F594 /* PDFOutlineCell.swift in Sources */,
+				5EE3C06D230FDE090066F594 /* PDFSearchCell.swift in Sources */,
+				5EE3C06F230FDE690066F594 /* PDFSearchTableViewController.swift in Sources */,
 				5EE3C066230E76070066F594 /* PDFOutlineTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

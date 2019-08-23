@@ -15,6 +15,7 @@ import PDFKit
 
 protocol PDFToolBarActionControllerProtocol: class {
     func showOutlineTable(for pdfDocument: PDFDocument, from sender: Any)
+    func showSearchTable(for pdfDocument: PDFDocument, from sender: Any)
 }
 
 
@@ -47,6 +48,15 @@ class PDFToolBarActionController: PDFToolBarActionControllerProtocol {
         self.present(viewController: outlineTableViewController, from: sender)
     }
 
+    func showSearchTable(for pdfDocument: PDFDocument, from sender: Any) {
+
+        let searchTableViewController = PDFSearchTableViewController.initFromStoryboard()
+        searchTableViewController.delegate = self
+        searchTableViewController.pdfDocument = pdfDocument
+
+        self.present(viewController: searchTableViewController, from: sender)
+    }
+
 
     // MARK: - Private
 
@@ -73,4 +83,14 @@ extension PDFToolBarActionController: PDFOutlineTableViewControllerDelegate {
         self.pdfPreviewViewController.didSelect(pdfOutline: pdfOutline)
     }
 
+}
+
+
+// MARK: - PDFSearchTableViewControllerDelegate
+
+
+extension PDFToolBarActionController: PDFSearchTableViewControllerDelegate {
+    func searchTableViewControllerDidSelect(pdfSelection: PDFSelection) {
+        self.pdfPreviewViewController.didSelect(pdfSelection: pdfSelection)
+    }
 }

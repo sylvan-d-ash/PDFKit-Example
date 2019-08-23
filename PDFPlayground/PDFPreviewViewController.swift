@@ -50,6 +50,10 @@ class PDFPreviewViewController: UIViewController {
         self.toolBarActionController.showOutlineTable(for: self.pdfDocument, from: sender)
     }
 
+    @IBAction func searchAction(_ sender: Any) {
+        self.toolBarActionController.showSearchTable(for: self.pdfDocument, from: sender)
+    }
+
 
     // MARK: - Setup
 
@@ -84,12 +88,13 @@ class PDFPreviewViewController: UIViewController {
         // get pdf document and add it to pdf view
         self.pdfDocument = PDFDocument(url: url)
         self.pdfView.document = self.pdfDocument
-        self.pdfView.usePageViewController(true, withViewOptions: nil)
+        self.pdfView.usePageViewController((displayMode == .singlePage ? true : false), withViewOptions: nil)
     }
 
     private func setupToolbar() {
         self.toolBarActionController = PDFToolBarActionController(pdfPreviewViewController: self)
     }
+
 }
 
 
@@ -102,4 +107,12 @@ extension PDFPreviewViewController {
         guard let destination = pdfOutline.destination, let page = destination.page else { return }
         self.pdfView.go(to: page)
     }
+
+    /// Jump to selected search text
+    func didSelect(pdfSelection: PDFSelection) {
+        pdfSelection.color = .yellow
+        self.pdfView.currentSelection = pdfSelection
+        self.pdfView.go(to: pdfSelection)
+    }
+
 }
